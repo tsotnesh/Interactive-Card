@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Card</title>
+    <link rel="icon" href="images/favicon-32x32.png" size="32x32">
+    <script src="https://kit.fontawesome.com/169bb788be.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    
+<link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+    <div class = "main-block">
+    
+    <div class="big-block">
+    <img src="images/bg-main-desktop.png" alt = "left-side" class = "left-part">
+    
+    <div class="block1">
+    <div class="card-front">
+    <img src = "images/bg-card-front.png" alt= "cardfrontside">
+    <i class="fa-solid fa-circle"></i>
+    <div class="babycircle"><i class="fa-regular fa-circle"></i></div>
+    <p class="cardinitialnumber" id="screen-card-number">0000 0000 0000 0000</p>
+    <p class="cardholdername" id="card-holder-name">CARDHOLDER NAME</p>
+    <p class="dateoncard"  id="date-card">00/00</p>
+</div>
+    </div>
+    
+    
+    <div class="block2">
+    <img src = "images/bg-card-back.png" alt="cardbackside" class="card-back">
+    <p class="cvc-card" id="card-cvc">000</p>
+    </div>
+
+</div>
+
+ <!-- aq on submit rom aris egec imitomaa rom gverdi mudmivad ar darefreshdes -->
+<form class="formclass" method = "POST" onsubmit="return mySubmitFunction(event)">
+    <!-- datefield ertidaigive div obiektebia, romelic erti aris saxelis velistvis da kveda aris card number veli -->
+    <div class="datefield">
+    <label for="fname" class="input-text">CARDHOLDER NAME</label>
+    <input class="cardlongfield" type="text" id="fname" name="fname" placeholder="e.g. TSOTNE SHENGELIA">
+    <p class="alert-text hidden" id="alertname"> Wrong format, letters only(not symbols,or numbers)</p>
+</div>
+
+    <div class="datefield" >
+    <label for="cnumber" class="input-text">CARD NUMBER</label>
+    <input class = "cardlongfield" type="text" id="cnumber" name="cnumber" placeholder="e.g. 1234567891230000">
+    <p class="alert-text hidden" id="alertnumber"> Wrong format, numbers only or incorrect card number</p>
+</div>
+
+        <!-- mesame veli cota sxvanairia, calkea jer month da year velebistvis div. mere calkea
+        cvc div-ic da isini wesit spacebetween flex methodit arian dalagebuli mshobel divshi romelic
+    zemodanaa matze shemovlebuli ra  -->
+    <div class = "thirdfield">
+    <div class = "datefield">
+    <label for = "carddate" class="input-text">EXP.DATE (MM/YY)</label>
+    <div>
+    <input class = "shortfield" type="text" id="month" name="carddate" placeholder="MM">
+    <input class = "shortfield" type="text" id="year" name="carddate" placeholder="YY">  
+</div>
+     <!--red alertebi qvemot tavistvad.  -->
+<div class = "red-alerts">
+        <p class="alert-text hidden" id="alertmonth">Invalid Month</p>
+        <p class="alert-text hidden" id="alertyear">Invalid Year</p>
+     </div>
+
+</div>
+    
+    <div class = "datefield">
+    <label for = "cardcode" class="input-text">CVC</label>
+    <input class = "keyfield" type="text" id="cvc" name="cardcode" placeholder = "e.g 123">
+    <p class="alert-text hidden" id="alertcvc">Invalid CVC</p>
+
+</div>
+</div>
+
+<button class="btn" type="submit"><p class="btn-text">Confirm</p></button>
+
+
+</form>
+<!-- nu es damaluli blockia romelic chndeba confirmis zustad shesrulebis shemdeg da klaseli hidden eshleba -->
+<div class="after-confirm hidden">
+    <i class="fa-sharp fa-solid fa-circle-check"></i>
+    <p class="after-header">THANK YOU!</p>
+    <p class="after-paragraph">We've added your card details</p>
+    <button class="btn" id="btn"><p class="btn-text">Continue</p></button>
+
+</div>
+
+</div>
+
+
+
+    
+</body>
+<script src="script.js"></script>
+</html>

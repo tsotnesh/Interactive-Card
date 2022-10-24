@@ -1,0 +1,196 @@
+body {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.main-block {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+.big-block {
+   margin-left: 0;
+   width:500px;
+   height:900px;
+   position: relative;
+}
+
+
+
+.block1 {
+    position:absolute;
+    top:80px;
+    left:120px;
+}
+
+.block2 {
+    position:absolute;
+    top:400px;
+    left:180px;
+}
+
+.card-front {
+    position:relative;
+}
+
+.card-back {
+    position:relative;
+}
+
+.fa-circle {
+    position:absolute;
+    top:25px;
+    left: 25px;
+    font-size:50px;
+    color:hsl(0, 0%, 100%);
+}
+
+.babycircle {
+    position:absolute;
+    top:2px;
+    left:55px;
+}
+
+.cardinitialnumber {
+    position:absolute;
+    bottom: 85px;
+    left: 30px;
+    font-family:'Space Grotesk', sans-serif;
+    font-size: 30px;
+    color:hsl(270, 3%, 87%);
+}
+.cardholdername {
+    position:absolute;
+    bottom: 30px;
+    left:30px;
+    font-family:'Space Grotesk', sans-serif;
+    font-size: 20px;
+    color:hsl(270, 3%, 87%);
+
+}
+
+.dateoncard {
+    position:absolute;
+    bottom: 31px;
+    right:30px;
+    font-family:'Space Grotesk', sans-serif;
+    font-size:18px;
+    color:hsl(270, 3%, 87%);
+
+}
+
+.cvc-card {
+    position:absolute;
+    top:110px;
+    right:70px;
+    font-family:'Space Grotesk', sans-serif;
+    font-size:18px;
+    color:hsl(270, 3%, 87%);
+}
+
+.formclass {
+    position:absolute;
+    top: 50px;
+    right: 200px;
+    width:406px;
+}
+
+
+.datefield {
+    display:flex;
+    flex-direction: column;
+    margin-top:25px;
+}
+
+.thirdfield {
+    width:384px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.cardlongfield {
+    width: 384px;
+    height: 42px;
+    border-radius:5px;
+    cursor:pointer;
+    border-bottom: 2px solid orange;
+}
+.shortfield {
+    width: 82px;
+    height:42px;
+    border-radius:5px;
+    border-bottom: 2px solid red;
+    cursor:pointer;
+}
+.keyfield {
+    width:200px;
+    height:42px;
+    border-radius: 5px;
+    cursor:pointer;
+    border-bottom: 2px solid red;
+}
+
+.btn {
+    width: 384px;
+    height:42px;
+    background-color: hsl(278, 68%, 11%);
+    color:aliceblue;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top:25px;
+    border:none;
+    cursor: pointer;
+    
+}
+
+.after-confirm {
+    position:absolute;
+    top:80px;
+    right:200px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fa-circle-check {
+    font-size:60px;
+    color: blueviolet;
+    margin-bottom:10px;
+}
+.after-header {
+    font-family: 'Space Grotesk', sans-serif ;
+    font-size:23px;
+    color: black;
+    margin-bottom:5px;
+}
+
+.after-paragraph {
+    font-family: 'Space Grotesk', sans-serif ;
+    font-size:15px;
+    color:hsl(279, 6%, 55%);
+}
+
+.input-text {
+    font-family: 'Space Grotesk', sans-serif ;
+    font-size:13px;
+    margin-bottom: 5px;
+}
+
+.alert-text {
+    color:hsl(0, 100%, 66%);
+    font-size:12px;
+    font-family: 'Space Grotesk', sans-serif ;
+}
+
+.red-alerts {
+    width:150px;
+    display:flex;
+    justify-content: space-between;
+}
+
+
+
+.hidden {
+    display:none;
+}
+
